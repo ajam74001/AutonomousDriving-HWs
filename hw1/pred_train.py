@@ -25,7 +25,7 @@ def validate(model, dataloader):
             loss2 = crit1(preds["route_angle"],measurements["route_angle"].to(device))
             loss3 = crit1(preds["tl_dist"],measurements["tl_dist"].to(device))
             loss4 = crit2(preds["tl_state"],measurements["tl_state"].float().to(device))
-            loss = loss1 + loss2 + loss3 + loss4    
+            loss = loss1 + loss2 + 0.1*loss3 + loss4    # to make the tl_dist in range of others, I have mutilplied its loss by 0.1
             running_loss += loss.item()
             wandb.log({'Val/lane_dist_loss': loss1.mean().item(),
                    'Val/route_angle_loss': loss2.mean().item(),

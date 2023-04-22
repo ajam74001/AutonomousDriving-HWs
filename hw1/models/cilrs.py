@@ -47,11 +47,13 @@ class CILRS(nn.Module):
         self.relu = nn.ReLU()
     def forward(self, img, command, speed):
         img = self.resnet18(img)
-        img = self.relu(img).squeeze() # this relu is required?
-        # print(speed.unsqueeze(1).shape)
-        speed = self.speed_fc(speed.unsqueeze(1).float())
-        emb= torch.cat([img,speed], dim =1) # 128+512
-        emb = self.emb_fc(emb)
+        img = self.relu(img).squeeze(-1).squeeze(-1) # b x 512
+        # print(img.shape)
+        speed = self.speed_fc(speed.unsqueeze(1).float()) # b x 128
+        # print(speed.shape)
+        emb= torch.cat([img,speed], dim =1) # b x 128+512
+        # print(emb.shape)
+        emb = self.emb_fc(emb) # b x 512
         
         pred_control = torch.zeros((img.shape[0],3)).to(device)
         for c in torch.unique(command):

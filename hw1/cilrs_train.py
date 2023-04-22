@@ -6,7 +6,7 @@ from expert_dataset import ExpertDataset
 from models.cilrs import CILRS
 import matplotlib.pyplot as plt
 from torchvision import transforms
-import wandb
+# import wandb
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 global_step = 0
 
@@ -34,13 +34,13 @@ def validate(model, dataloader):
             loss4 = crit(preds_control[:,2],steer)
             loss = loss1 + loss2 + loss3 + loss4
             running_loss += loss.item()
-            wandb.log({'val/Speed_loss': loss1.mean().item(),
-                   'val/throttle_loss': loss2.mean().item(),
-                   'val/brake_loss': loss3.mean().item(),
-                   'val/steer_loss': loss4.mean().item(),
-                   'val/total_loss': loss.mean().item(),
-                 },
-                 step=global_step )
+            # wandb.log({'val/Speed_loss': loss1.mean().item(),
+            #        'val/throttle_loss': loss2.mean().item(),
+            #        'val/brake_loss': loss3.mean().item(),
+            #        'val/steer_loss': loss4.mean().item(),
+            #        'val/total_loss': loss.mean().item(),
+            #      },
+            #      step=global_step )
             
     return running_loss/len(dataloader)
 
@@ -68,18 +68,18 @@ def train(model, dataloader):
         loss2 = crit(preds_control[:,0],throttle.float())
         loss3 = crit(preds_control[:,1],brake.float())
         loss4 = crit(preds_control[:,2],steer.float())
-        loss = loss1 + loss2 + loss3 + loss4
+        loss = 0.25 * loss1 + loss2 + loss3 + loss4 # so that speed will be in ranges
         loss.backward() 
         running_loss += loss.item()
         optimizer.step()
 
-        wandb.log({'Train/Speed_loss': loss1.mean().item(),
-                   'Train/throttle_loss': loss2.mean().item(),
-                   'Train/brake_loss': loss3.mean().item(),
-                   'Train/steer_loss': loss4.mean().item(),
-                   'Train/total_loss': loss.mean().item(),
-                 },
-                 step = global_step)
+        # wandb.log({'Train/Speed_loss': loss1.mean().item(),
+        #            'Train/throttle_loss': loss2.mean().item(),
+        #            'Train/brake_loss': loss3.mean().item(),
+        #            'Train/steer_loss': loss4.mean().item(),
+        #            'Train/total_loss': loss.mean().item(),
+        #          },
+        #          step = global_step)
         global_step += 1
     return running_loss/len(dataloader)
 
@@ -99,7 +99,7 @@ def plot_losses(train_loss, val_loss):
 
 def main():
     # Change these paths to the correct paths in your downloaded expert dataset
-    wandb.init(project='cvad-hw1', name='CILRS-processed_data-L1_Loss')
+    # wandb.init(project='cvad-hw1', name='CILRS-processed_data-L1_Loss')
     train_root = "/userfiles/ssafadoust20/expert_data/train" # inside there is a measurement and rgb
     val_root = "/userfiles/ssafadoust20/expert_data/val"
     model = CILRS().to(device)

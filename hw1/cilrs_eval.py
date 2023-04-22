@@ -4,7 +4,7 @@ import yaml
 import torch
 from torchvision import transforms
 from carla_env.env import Env
-
+import numpy as np
 
 class Evaluator():
     def __init__(self, env, config):
@@ -21,25 +21,30 @@ class Evaluator():
     def generate_action(self, rgb, command, speed):
         # Your code here
         img_preprocess = transforms.Compose([
-            transforms.Resize(256),
+            transforms.Resize(224),
             transforms.CenterCrop(224),
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
         ])
         rgb = img_preprocess(Image.fromarray(rgb)).unsqueeze(0).to(self.device)
-        command = torch.Tensor([command]).unsqueeze(0).to(self.device)
-        speed = torch.Tensor([speed]).unsqueeze(0).to(self.device)
+        command = torch.Tensor([command]).to(self.device).int()
+        speed = torch.Tensor([speed]).to(self.device)
+        # print(speed.shape , rgb.shape)
         pred_actions, pred_speed = self.agent(rgb, command, speed) # model 
-        return pred_actions.cpu().detach().float().numpy().astype(np.float32)
+        return pred_actions[0].cpu().detach().float().numpy().astype(np.float32)
     def take_step(self, state):
         rgb = state["rgb"]
         command = state["command"]
         speed = state["speed"]
         throttle, steer, brake = self.generate_action(rgb, command, speed)
+        if brake < 0.01:
+            brake = 0
+        print('predictions', throttle , steer ,brake)
+
         action = {
-            "throttle": throttle,
-            "brake": brake,
-            "steer": steer
+            "throttle": float(throttle * 50),
+            "brake": float(brake),
+            "steer": float(steer)
         }
         state, reward_dict, is_terminal = self.env.step(action)
         return state, is_terminal

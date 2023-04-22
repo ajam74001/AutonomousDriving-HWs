@@ -1,0 +1,239 @@
+2023-04-22 15:59:59,300 INFO    StreamThr :6291 [internal.py:wandb_internal():89] W&B internal server running at pid: 6291, started at: 2023-04-22 15:59:59.298689
+2023-04-22 15:59:59,331 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status
+2023-04-22 15:59:59,362 INFO    WriterThread:6291 [datastore.py:open_for_write():85] open: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/run-q3fcw7hl.wandb
+2023-04-22 15:59:59,366 DEBUG   SenderThread:6291 [sender.py:send():375] send: header
+2023-04-22 15:59:59,431 DEBUG   SenderThread:6291 [sender.py:send():375] send: run
+2023-04-22 16:00:00,038 INFO    SenderThread:6291 [dir_watcher.py:__init__():219] watching files in: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files
+2023-04-22 16:00:00,039 INFO    SenderThread:6291 [sender.py:_start_run_threads():1127] run started: q3fcw7hl with start time 1682168399.356119
+2023-04-22 16:00:00,039 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:00:00,050 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:00:00,058 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: check_version
+2023-04-22 16:00:00,059 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: check_version
+2023-04-22 16:00:00,360 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: run_start
+2023-04-22 16:00:00,374 DEBUG   HandlerThread:6291 [system_info.py:__init__():31] System info init
+2023-04-22 16:00:00,375 DEBUG   HandlerThread:6291 [system_info.py:__init__():46] System info init done
+2023-04-22 16:00:00,376 INFO    HandlerThread:6291 [system_monitor.py:start():181] Starting system monitor
+2023-04-22 16:00:00,377 INFO    SystemMonitor:6291 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-04-22 16:00:00,377 INFO    HandlerThread:6291 [system_monitor.py:probe():201] Collecting system info
+2023-04-22 16:00:00,378 INFO    SystemMonitor:6291 [interfaces.py:start():190] Started cpu monitoring
+2023-04-22 16:00:00,380 INFO    SystemMonitor:6291 [interfaces.py:start():190] Started disk monitoring
+2023-04-22 16:00:00,382 INFO    SystemMonitor:6291 [interfaces.py:start():190] Started gpu monitoring
+2023-04-22 16:00:00,384 INFO    SystemMonitor:6291 [interfaces.py:start():190] Started memory monitoring
+2023-04-22 16:00:00,385 INFO    SystemMonitor:6291 [interfaces.py:start():190] Started network monitoring
+2023-04-22 16:00:00,433 DEBUG   HandlerThread:6291 [system_info.py:probe():195] Probing system
+2023-04-22 16:00:00,462 DEBUG   HandlerThread:6291 [system_info.py:_probe_git():180] Probing git
+2023-04-22 16:00:00,541 DEBUG   HandlerThread:6291 [system_info.py:_probe_git():188] Probing git done
+2023-04-22 16:00:00,542 DEBUG   HandlerThread:6291 [system_info.py:probe():240] Probing system done
+2023-04-22 16:00:00,543 DEBUG   HandlerThread:6291 [system_monitor.py:probe():210] {'os': 'Linux-3.10.0-693.11.6.el7.x86_64-x86_64-with-centos-7.4.1708-Core', 'python': '3.7.13', 'heartbeatAt': '2023-04-22T13:00:00.434435', 'startedAt': '2023-04-22T12:59:59.146584', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'cilrs_train.py', 'codePath': 'hw1/cilrs_train.py', 'git': {'remote': 'https://github.com/ajam74001/AutonomousDriving-HWs.git', 'commit': 'bbc7e1a6ad77fb565a68629726e6c623664c32a1'}, 'email': None, 'root': '/scratch/users/ajamshidi18/hpc_run/AutoDriving', 'host': 'ai03.kuacc.ku.edu.tr', 'username': 'ajamshidi18', 'executable': '/kuacc/users/ajamshidi18/.conda/envs/driving2/bin/python', 'cpu_count': 40, 'cpu_count_logical': 40, 'cpu_freq': {'current': 1.115075, 'min': 1000.0, 'max': 2501.0}, 'cpu_freq_per_core': [{'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.1, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.1, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}], 'disk': {'total': 875.6815872192383, 'used': 138.44372940063477}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 15843721216}], 'memory': {'total': 503.37668228149414}}
+2023-04-22 16:00:00,544 INFO    HandlerThread:6291 [system_monitor.py:probe():211] Finished collecting system info
+2023-04-22 16:00:00,545 INFO    HandlerThread:6291 [system_monitor.py:probe():214] Publishing system info
+2023-04-22 16:00:00,545 DEBUG   HandlerThread:6291 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-04-22 16:00:00,566 DEBUG   HandlerThread:6291 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-22 16:00:00,567 DEBUG   HandlerThread:6291 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-04-22 16:00:01,046 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/requirements.txt
+2023-04-22 16:00:01,048 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:00:01,049 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/conda-environment.yaml
+2023-04-22 16:00:47,832 DEBUG   HandlerThread:6291 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-22 16:00:47,846 INFO    HandlerThread:6291 [system_monitor.py:probe():216] Finished publishing system info
+2023-04-22 16:00:47,974 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:47,974 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:47,975 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:47,976 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:47,976 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:47,977 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:47,977 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:47,978 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:47,979 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:47,979 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:47,980 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:47,981 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-22 16:00:47,981 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:47,982 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:47,983 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:47,983 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:47,982 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: stop_status
+2023-04-22 16:00:47,984 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:00:47,987 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:47,988 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:48,167 DEBUG   SenderThread:6291 [sender.py:send():375] send: telemetry
+2023-04-22 16:00:48,168 DEBUG   SenderThread:6291 [sender.py:send():375] send: files
+2023-04-22 16:00:48,168 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-04-22 16:00:48,256 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/conda-environment.yaml
+2023-04-22 16:00:48,257 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-metadata.json
+2023-04-22 16:00:48,817 INFO    wandb-upload_0:6291 [upload_job.py:push():137] Uploaded file /tmp/tmp23lbtbn3wandb/gwllmx1q-wandb-metadata.json
+2023-04-22 16:00:48,976 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:00:48,980 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:00:48,981 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:00:48,988 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:00:49,260 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:00:50,408 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:50,526 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:00:50,528 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:00:50,529 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:00:50,529 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:50,533 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:00:51,269 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:00:52,064 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:00:52,066 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:00:52,067 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:00:52,073 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:00:52,273 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:00:53,602 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:00:53,604 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:00:53,605 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:00:53,609 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:00:54,281 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:00:55,136 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:00:55,138 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:00:55,139 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:00:55,146 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:00:55,285 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:00:55,409 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:00:56,147 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:00:56,689 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:00:56,691 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:00:56,692 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:00:56,696 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:00:57,294 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:00:58,242 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:00:58,244 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:00:58,245 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:00:58,251 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:00:58,297 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:01:00,007 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:01:00,009 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:01:00,010 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:01:00,014 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:00,305 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:01:00,387 DEBUG   SystemMonitor:6291 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-04-22 16:01:00,390 DEBUG   SenderThread:6291 [sender.py:send():375] send: stats
+2023-04-22 16:01:00,409 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:01:01,396 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:01:01,643 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:01:01,644 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:01:01,645 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:01:01,650 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:02,313 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:01:02,314 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/config.yaml
+2023-04-22 16:01:03,172 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:01:03,174 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:01:03,175 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:01:03,179 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:03,317 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:01:04,700 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:01:04,702 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:01:04,703 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:01:04,707 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:05,326 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:01:05,410 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-22 16:01:06,247 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:01:06,248 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:01:06,249 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:01:06,254 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:06,331 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:01:07,255 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:01:07,791 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:01:07,792 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:01:07,793 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:01:07,797 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:08,339 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:01:09,335 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-22 16:01:09,336 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:01:09,337 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:01:09,347 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:01:09,347 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:09,642 DEBUG   SenderThread:6291 [sender.py:send():375] send: exit
+2023-04-22 16:01:09,643 INFO    SenderThread:6291 [sender.py:send_exit():598] handling exit code: 255
+2023-04-22 16:01:09,644 INFO    SenderThread:6291 [sender.py:send_exit():600] handling runtime: 69
+2023-04-22 16:01:09,648 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:09,649 INFO    SenderThread:6291 [sender.py:send_exit():606] send defer
+2023-04-22 16:01:09,650 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:09,650 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-22 16:01:09,651 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: defer
+2023-04-22 16:01:09,651 INFO    SenderThread:6291 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-04-22 16:01:09,652 INFO    SenderThread:6291 [sender.py:transition_state():626] send defer: 1
+2023-04-22 16:01:09,653 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:09,653 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-22 16:01:09,654 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: defer
+2023-04-22 16:01:09,655 INFO    SenderThread:6291 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-04-22 16:01:09,655 INFO    SenderThread:6291 [sender.py:transition_state():626] send defer: 2
+2023-04-22 16:01:09,656 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:09,657 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-22 16:01:09,657 INFO    HandlerThread:6291 [system_monitor.py:finish():190] Stopping system monitor
+2023-04-22 16:01:09,658 DEBUG   SystemMonitor:6291 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-04-22 16:01:09,658 INFO    HandlerThread:6291 [interfaces.py:finish():202] Joined cpu monitor
+2023-04-22 16:01:09,661 DEBUG   SystemMonitor:6291 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-04-22 16:01:09,661 INFO    HandlerThread:6291 [interfaces.py:finish():202] Joined disk monitor
+2023-04-22 16:01:09,741 INFO    HandlerThread:6291 [interfaces.py:finish():202] Joined gpu monitor
+2023-04-22 16:01:09,742 INFO    HandlerThread:6291 [interfaces.py:finish():202] Joined memory monitor
+2023-04-22 16:01:09,742 INFO    HandlerThread:6291 [interfaces.py:finish():202] Joined network monitor
+2023-04-22 16:01:09,744 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: defer
+2023-04-22 16:01:09,744 INFO    SenderThread:6291 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-04-22 16:01:09,745 INFO    SenderThread:6291 [sender.py:transition_state():626] send defer: 3
+2023-04-22 16:01:09,746 DEBUG   SenderThread:6291 [sender.py:send():375] send: stats
+2023-04-22 16:01:09,746 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:09,748 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-22 16:01:09,749 DEBUG   SenderThread:6291 [sender.py:send():375] send: history
+2023-04-22 16:01:09,750 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: summary_record
+2023-04-22 16:01:09,754 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:09,755 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: defer
+2023-04-22 16:01:09,756 INFO    SenderThread:6291 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-04-22 16:01:09,757 INFO    SenderThread:6291 [sender.py:transition_state():626] send defer: 4
+2023-04-22 16:01:09,757 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:09,758 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-22 16:01:09,759 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: defer
+2023-04-22 16:01:09,759 INFO    SenderThread:6291 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-04-22 16:01:09,760 INFO    SenderThread:6291 [sender.py:transition_state():626] send defer: 5
+2023-04-22 16:01:09,760 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:09,761 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-22 16:01:09,762 DEBUG   SenderThread:6291 [sender.py:send():375] send: summary
+2023-04-22 16:01:09,766 INFO    SenderThread:6291 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-22 16:01:09,767 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: defer
+2023-04-22 16:01:09,768 INFO    SenderThread:6291 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-04-22 16:01:09,768 INFO    SenderThread:6291 [sender.py:transition_state():626] send defer: 6
+2023-04-22 16:01:09,769 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:09,770 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-22 16:01:09,771 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: defer
+2023-04-22 16:01:09,771 INFO    SenderThread:6291 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-04-22 16:01:09,772 INFO    SenderThread:6291 [sender.py:transition_state():626] send defer: 7
+2023-04-22 16:01:09,772 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: status_report
+2023-04-22 16:01:09,773 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:09,774 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-22 16:01:09,774 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: defer
+2023-04-22 16:01:09,775 INFO    SenderThread:6291 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-04-22 16:01:10,354 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/output.log
+2023-04-22 16:01:10,643 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-22 16:01:11,663 INFO    SenderThread:6291 [sender.py:transition_state():626] send defer: 8
+2023-04-22 16:01:11,664 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: poll_exit
+2023-04-22 16:01:11,664 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:11,665 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-22 16:01:11,666 DEBUG   SenderThread:6291 [sender.py:send_request():402] send_request: defer
+2023-04-22 16:01:11,667 INFO    SenderThread:6291 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-04-22 16:01:12,056 INFO    SenderThread:6291 [sender.py:transition_state():626] send defer: 9
+2023-04-22 16:01:12,057 DEBUG   SenderThread:6291 [sender.py:send():375] send: artifact
+2023-04-22 16:01:12,057 DEBUG   HandlerThread:6291 [handler.py:handle_request():144] handle_request: defer
+2023-04-22 16:01:12,064 INFO    HandlerThread:6291 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-22 16:01:12,365 INFO    Thread-12 :6291 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/output.log
+2023-04-22 16:01:12,407 WARNING StreamThr :6291 [internal.py:is_dead():415] Internal process exiting, parent pid 6266 disappeared
+2023-04-22 16:01:12,408 ERROR   StreamThr :6291 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-04-22 16:01:13,065 INFO    HandlerThread:6291 [handler.py:finish():845] shutting down handler
+2023-04-22 16:01:13,065 INFO    WriterThread:6291 [datastore.py:close():298] close: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/run-q3fcw7hl.wandb
+2023-04-22 16:01:13,286 INFO    wandb-upload_0:6291 [upload_job.py:push():92] Skipped uploading /kuacc/users/ajamshidi18/.local/share/wandb/artifacts/staging/tmp6co6kpa9
+2023-04-22 16:01:13,866 INFO    wandb-upload_2:6291 [upload_job.py:push():95] Uploaded file /kuacc/users/ajamshidi18/.local/share/wandb/artifacts/staging/tmppg_ol14_
+2023-04-22 16:01:15,256 INFO    SenderThread:6291 [sender.py:send_artifact():1474] sent artifact job-https___github.com_ajam74001_AutonomousDriving-HWs.git_hw1_cilrs_train.py - {'id': 'QXJ0aWZhY3Q6NDMwNzAzOTAz', 'digest': 'f640f7f48b09d3e3c7ea464437f7334f', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYzMDA4NTI5', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDI4MjMyMjc3', 'versionIndex': 5}}, 'version': 'latest'}
+2023-04-22 16:01:15,283 INFO    SenderThread:6291 [sender.py:finish():1550] shutting down sender
+2023-04-22 16:01:15,284 INFO    SenderThread:6291 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-22 16:01:15,370 INFO    SenderThread:6291 [dir_watcher.py:finish():395] scan: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files
+2023-04-22 16:01:15,373 INFO    SenderThread:6291 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-metadata.json wandb-metadata.json
+2023-04-22 16:01:15,374 INFO    SenderThread:6291 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json wandb-summary.json
+2023-04-22 16:01:15,375 INFO    SenderThread:6291 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/requirements.txt requirements.txt
+2023-04-22 16:01:15,385 INFO    SenderThread:6291 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/config.yaml config.yaml
+2023-04-22 16:01:15,394 INFO    SenderThread:6291 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/conda-environment.yaml conda-environment.yaml
+2023-04-22 16:01:15,404 INFO    SenderThread:6291 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/output.log output.log
+2023-04-22 16:01:15,413 INFO    SenderThread:6291 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-22 16:01:15,413 INFO    SenderThread:6291 [file_pusher.py:join():173] waiting for file pusher
+2023-04-22 16:01:15,885 INFO    wandb-upload_1:6291 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/wandb-summary.json
+2023-04-22 16:01:16,065 INFO    wandb-upload_3:6291 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/config.yaml
+2023-04-22 16:01:16,104 INFO    wandb-upload_0:6291 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/output.log
+2023-04-22 16:01:16,107 INFO    wandb-upload_2:6291 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/requirements.txt
+2023-04-22 16:01:16,123 INFO    wandb-upload_6:6291 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230422_155959-q3fcw7hl/files/conda-environment.yaml
