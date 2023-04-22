@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "pred_train.py", line 119, in <module>
+    main()
+  File "pred_train.py", line 104, in main
+    print(train_dataset.shape)
+AttributeError: 'ExpertDataset' object has no attribute 'shape'

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "pred_train.py", line 120, in <module>
+    main()
+  File "pred_train.py", line 114, in main
+    val_losses.append(validate(model, val_loader))
+  File "pred_train.py", line 35, in validate
+    "step" : global_step
+UnboundLocalError: local variable 'global_step' referenced before assignment

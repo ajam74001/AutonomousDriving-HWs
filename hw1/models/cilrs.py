@@ -58,4 +58,7 @@ class CILRS(nn.Module):
             pred_control[command == c] = self.control_branches[c](emb[command == c ])
         # print(pred_control.shape) # b x 3
         pred_speed = self.speed_branch(img)
+        # we can pass the pred_control element to relevant activation functions to make the training more stable
+        # steer -> tanh() cuz the steer is between -1, 1 & throttle, brake -> sigmoid cuz brake is between 0-1
+        # However as i had a stable  training, i ignored this step
         return pred_control, pred_speed

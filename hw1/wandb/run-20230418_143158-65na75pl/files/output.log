@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "pred_train.py", line 117, in <module>
+    main()
+  File "pred_train.py", line 111, in main
+    val_losses.append(validate(model, val_loader))
+  File "pred_train.py", line 21, in validate
+    for measurements,images in dataloader:
+  File "/kuacc/users/ajamshidi18/.conda/envs/driving2/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/kuacc/users/ajamshidi18/.conda/envs/driving2/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 475, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/kuacc/users/ajamshidi18/.conda/envs/driving2/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/kuacc/users/ajamshidi18/.conda/envs/driving2/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/expert_dataset.py", line 21, in __getitem__
+    with open(os.path.join(self.measurements_dir, self.measurements[index]), 'r') as f:
+  File "/kuacc/users/ajamshidi18/.conda/envs/driving2/lib/python3.7/_bootlocale.py", line 33, in getpreferredencoding
+    def getpreferredencoding(do_setlocale=True):
+KeyboardInterrupt

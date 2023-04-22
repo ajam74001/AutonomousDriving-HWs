@@ -1,0 +1,1 @@
+{"Train/Speed_loss": 1.7987938145039897, "Train/throttle_loss": 0.09357199621445034, "Train/brake_loss": 0.020529564692664655, "Train/rsteer_loss": 0.07253995314085926, "Train/total_loss": 1.985435328551964, "_timestamp": 1682150464.364366, "_runtime": 335931.9116139412, "_step": 77998}

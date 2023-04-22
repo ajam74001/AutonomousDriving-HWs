@@ -1,24 +1,36 @@
 import os
-
+from PIL import Image
 import yaml
-
+import torch
+from torchvision import transforms
 from carla_env.env import Env
 
 
 class Evaluator():
     def __init__(self, env, config):
+        self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.env = env
         self.config = config
         self.agent = self.load_agent()
 
-    def load_agent():
+    def load_agent(self):
         # Your code here
-        pass
+        model = torch.load('cilrs_model-L2-loss.ckpt',map_location=torch.device('cpu'))
+        return model.to(self.device).eval()
 
-    def generate_action(rgb, command, speed):
+    def generate_action(self, rgb, command, speed):
         # Your code here
-        pass
-
+        img_preprocess = transforms.Compose([
+            transforms.Resize(256),
+            transforms.CenterCrop(224),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+        ])
+        rgb = img_preprocess(Image.fromarray(rgb)).unsqueeze(0).to(self.device)
+        command = torch.Tensor([command]).unsqueeze(0).to(self.device)
+        speed = torch.Tensor([speed]).unsqueeze(0).to(self.device)
+        pred_actions, pred_speed = self.agent(rgb, command, speed) # model 
+        return pred_actions.cpu().detach().float().numpy().astype(np.float32)
     def take_step(self, state):
         rgb = state["rgb"]
         command = state["command"]

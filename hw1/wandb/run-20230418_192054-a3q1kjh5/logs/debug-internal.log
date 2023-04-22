@@ -1,0 +1,338 @@
+2023-04-18 19:20:54,370 INFO    StreamThr :195183 [internal.py:wandb_internal():89] W&B internal server running at pid: 195183, started at: 2023-04-18 19:20:54.368337
+2023-04-18 19:20:54,372 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status
+2023-04-18 19:20:54,377 INFO    WriterThread:195183 [datastore.py:open_for_write():85] open: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/run-a3q1kjh5.wandb
+2023-04-18 19:20:54,383 DEBUG   SenderThread:195183 [sender.py:send():375] send: header
+2023-04-18 19:20:54,433 DEBUG   SenderThread:195183 [sender.py:send():375] send: run
+2023-04-18 19:20:54,948 INFO    SenderThread:195183 [dir_watcher.py:__init__():219] watching files in: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files
+2023-04-18 19:20:54,948 INFO    SenderThread:195183 [sender.py:_start_run_threads():1127] run started: a3q1kjh5 with start time 1681834854.373023
+2023-04-18 19:20:54,949 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:20:54,952 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:20:54,958 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: check_version
+2023-04-18 19:20:54,959 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: check_version
+2023-04-18 19:20:55,216 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: run_start
+2023-04-18 19:20:55,223 DEBUG   HandlerThread:195183 [system_info.py:__init__():31] System info init
+2023-04-18 19:20:55,225 DEBUG   HandlerThread:195183 [system_info.py:__init__():46] System info init done
+2023-04-18 19:20:55,225 INFO    HandlerThread:195183 [system_monitor.py:start():181] Starting system monitor
+2023-04-18 19:20:55,228 INFO    SystemMonitor:195183 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-04-18 19:20:55,228 INFO    HandlerThread:195183 [system_monitor.py:probe():201] Collecting system info
+2023-04-18 19:20:55,229 INFO    SystemMonitor:195183 [interfaces.py:start():190] Started cpu monitoring
+2023-04-18 19:20:55,231 INFO    SystemMonitor:195183 [interfaces.py:start():190] Started disk monitoring
+2023-04-18 19:20:55,232 INFO    SystemMonitor:195183 [interfaces.py:start():190] Started gpu monitoring
+2023-04-18 19:20:55,233 INFO    SystemMonitor:195183 [interfaces.py:start():190] Started memory monitoring
+2023-04-18 19:20:55,234 INFO    SystemMonitor:195183 [interfaces.py:start():190] Started network monitoring
+2023-04-18 19:20:55,252 DEBUG   HandlerThread:195183 [system_info.py:probe():195] Probing system
+2023-04-18 19:20:55,281 DEBUG   HandlerThread:195183 [system_info.py:_probe_git():180] Probing git
+2023-04-18 19:20:55,370 DEBUG   HandlerThread:195183 [system_info.py:_probe_git():188] Probing git done
+2023-04-18 19:20:55,371 DEBUG   HandlerThread:195183 [system_info.py:probe():240] Probing system done
+2023-04-18 19:20:55,372 DEBUG   HandlerThread:195183 [system_monitor.py:probe():210] {'os': 'Linux-3.10.0-693.11.6.el7.x86_64-x86_64-with-centos-7.4.1708-Core', 'python': '3.7.13', 'heartbeatAt': '2023-04-18T16:20:55.253546', 'startedAt': '2023-04-18T16:20:54.261387', 'docker': None, 'cuda': '11.0.228', 'args': (), 'state': 'running', 'program': 'pred_train.py', 'codePath': 'hw1/pred_train.py', 'git': {'remote': 'https://github.com/ajam74001/AutonomousDriving-HWs.git', 'commit': 'd856d3f3c2d14be8d1dde3dc4d734efe319a8b67'}, 'email': None, 'root': '/scratch/users/ajamshidi18/hpc_run/AutoDriving', 'host': 'ai02.kuacc.ku.edu.tr', 'username': 'ajamshidi18', 'executable': '/kuacc/users/ajamshidi18/.conda/envs/driving2/bin/python', 'cpu_count': 40, 'cpu_count_logical': 40, 'cpu_freq': {'current': 1.295175, 'min': 1000.0, 'max': 2501.0}, 'cpu_freq_per_core': [{'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 2.3, 'min': 1000.0, 'max': 2501.0}, {'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 2.501, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}, {'current': 1.0, 'min': 1000.0, 'max': 2501.0}], 'disk': {'total': 875.6815872192383, 'used': 87.35725402832031}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 15843721216}], 'memory': {'total': 503.37668228149414}}
+2023-04-18 19:20:55,372 INFO    HandlerThread:195183 [system_monitor.py:probe():211] Finished collecting system info
+2023-04-18 19:20:55,373 INFO    HandlerThread:195183 [system_monitor.py:probe():214] Publishing system info
+2023-04-18 19:20:55,374 DEBUG   HandlerThread:195183 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-04-18 19:20:55,378 DEBUG   HandlerThread:195183 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-18 19:20:55,380 DEBUG   HandlerThread:195183 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-04-18 19:20:55,952 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/conda-environment.yaml
+2023-04-18 19:20:55,954 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:20:55,954 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/requirements.txt
+2023-04-18 19:21:15,132 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/conda-environment.yaml
+2023-04-18 19:21:15,141 DEBUG   HandlerThread:195183 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-18 19:21:15,145 INFO    HandlerThread:195183 [system_monitor.py:probe():216] Finished publishing system info
+2023-04-18 19:21:15,162 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:15,162 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-18 19:21:15,163 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:15,164 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-18 19:21:15,164 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:15,165 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-18 19:21:15,166 DEBUG   SenderThread:195183 [sender.py:send():375] send: files
+2023-04-18 19:21:15,166 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-04-18 19:21:15,183 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:21:15,184 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:21:15,415 DEBUG   SenderThread:195183 [sender.py:send():375] send: telemetry
+2023-04-18 19:21:15,415 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:15,838 INFO    wandb-upload_0:195183 [upload_job.py:push():137] Uploaded file /tmp/tmp9bqd1c_jwandb/p3918bkk-wandb-metadata.json
+2023-04-18 19:21:16,134 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-metadata.json
+2023-04-18 19:21:20,416 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:25,421 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:26,162 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/config.yaml
+2023-04-18 19:21:27,421 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:21:27,423 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:21:27,424 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:21:27,428 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:21:28,167 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:21:30,183 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:21:30,184 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:21:31,357 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:34,311 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:21:34,312 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:21:34,313 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:21:34,317 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:21:35,183 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:21:37,318 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:41,133 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:21:41,134 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:21:41,135 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:21:41,140 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:21:41,197 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:21:43,141 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:45,183 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:21:45,184 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:21:48,358 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:21:48,360 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:21:48,360 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:21:48,362 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:48,365 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:21:49,221 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:21:53,366 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:21:55,199 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:21:55,201 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:21:55,202 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:21:55,205 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:21:55,235 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:21:55,235 DEBUG   SystemMonitor:195183 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-04-18 19:21:55,237 DEBUG   SenderThread:195183 [sender.py:send():375] send: stats
+2023-04-18 19:21:59,238 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:00,183 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:22:00,184 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:22:02,043 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:22:02,044 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:22:02,045 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:22:02,049 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:22:02,252 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:22:05,051 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:09,202 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:22:09,204 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:22:09,204 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:22:09,208 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:22:09,270 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:22:10,209 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:15,183 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:22:15,184 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:22:15,364 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:16,076 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:22:16,077 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:22:16,078 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:22:16,083 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:22:16,286 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:22:21,084 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:23,167 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:22:23,168 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:22:23,169 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:22:23,173 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:22:23,304 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:22:25,238 DEBUG   SenderThread:195183 [sender.py:send():375] send: stats
+2023-04-18 19:22:26,239 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:30,111 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:22:30,112 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:22:30,113 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:22:30,117 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:22:30,183 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:22:30,184 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:22:30,321 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:22:31,361 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:36,362 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:37,163 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:22:37,165 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:22:37,165 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:22:37,169 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:22:37,338 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:22:42,171 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:43,904 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:22:43,905 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:22:43,906 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:22:43,910 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:22:44,357 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:22:45,183 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:22:45,184 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:22:47,386 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:50,964 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:22:50,965 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:22:50,966 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:22:50,970 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:22:51,377 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:22:52,971 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:55,239 DEBUG   SenderThread:195183 [sender.py:send():375] send: stats
+2023-04-18 19:22:58,200 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:22:58,201 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:22:58,202 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:22:58,202 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:22:58,205 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:22:58,394 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:23:00,184 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:23:00,184 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:23:03,368 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:04,977 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:23:04,978 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:23:04,979 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:23:04,983 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:23:05,409 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:23:08,984 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:11,296 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:23:11,297 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:23:11,298 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:23:11,303 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:23:11,422 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:23:14,304 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:15,184 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:23:15,185 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:23:18,209 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:23:18,210 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:23:18,211 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:23:18,215 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:23:18,437 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:23:20,216 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:24,828 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:23:24,829 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:23:24,830 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:23:24,834 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:23:25,240 DEBUG   SenderThread:195183 [sender.py:send():375] send: stats
+2023-04-18 19:23:25,241 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:25,453 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:23:30,184 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:23:30,185 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:23:30,407 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:31,571 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:23:31,572 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:23:31,573 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:23:31,577 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:23:32,469 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:23:35,578 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:38,161 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:23:38,162 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:23:38,163 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:23:38,167 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:23:38,483 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:23:41,168 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:45,184 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:23:45,185 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:23:45,185 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:23:45,373 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:23:45,374 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:23:45,377 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:23:45,499 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:23:46,378 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:51,379 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:52,046 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:23:52,047 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:23:52,048 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:23:52,052 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:23:52,515 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:23:55,241 DEBUG   SenderThread:195183 [sender.py:send():375] send: stats
+2023-04-18 19:23:57,242 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:23:59,157 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:23:59,158 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:23:59,159 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:23:59,162 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:23:59,530 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:24:00,184 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:24:00,185 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:24:02,370 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:24:06,245 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:24:06,246 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:24:06,247 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:24:06,251 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:24:06,549 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:24:08,252 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:24:13,254 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:24:13,398 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-18 19:24:13,400 DEBUG   SenderThread:195183 [sender.py:send():375] send: history
+2023-04-18 19:24:13,401 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: summary_record
+2023-04-18 19:24:13,405 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:24:13,566 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:24:15,184 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-18 19:24:15,185 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: stop_status
+2023-04-18 19:24:18,389 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:24:19,736 DEBUG   SenderThread:195183 [sender.py:send():375] send: exit
+2023-04-18 19:24:19,737 INFO    SenderThread:195183 [sender.py:send_exit():598] handling exit code: 255
+2023-04-18 19:24:19,738 INFO    SenderThread:195183 [sender.py:send_exit():600] handling runtime: 204
+2023-04-18 19:24:19,741 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:24:19,742 INFO    SenderThread:195183 [sender.py:send_exit():606] send defer
+2023-04-18 19:24:19,742 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:19,743 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-18 19:24:19,744 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:19,744 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-04-18 19:24:19,745 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 1
+2023-04-18 19:24:19,745 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:19,746 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-18 19:24:19,746 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:19,747 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-04-18 19:24:19,747 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 2
+2023-04-18 19:24:19,748 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:19,748 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-18 19:24:19,749 INFO    HandlerThread:195183 [system_monitor.py:finish():190] Stopping system monitor
+2023-04-18 19:24:19,749 DEBUG   SystemMonitor:195183 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-04-18 19:24:19,750 INFO    HandlerThread:195183 [interfaces.py:finish():202] Joined cpu monitor
+2023-04-18 19:24:19,750 DEBUG   SystemMonitor:195183 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-04-18 19:24:19,751 INFO    HandlerThread:195183 [interfaces.py:finish():202] Joined disk monitor
+2023-04-18 19:24:19,824 INFO    HandlerThread:195183 [interfaces.py:finish():202] Joined gpu monitor
+2023-04-18 19:24:19,825 INFO    HandlerThread:195183 [interfaces.py:finish():202] Joined memory monitor
+2023-04-18 19:24:19,826 INFO    HandlerThread:195183 [interfaces.py:finish():202] Joined network monitor
+2023-04-18 19:24:19,827 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:19,828 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-04-18 19:24:19,828 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 3
+2023-04-18 19:24:19,829 DEBUG   SenderThread:195183 [sender.py:send():375] send: stats
+2023-04-18 19:24:19,829 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:19,830 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-18 19:24:19,831 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:19,831 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-04-18 19:24:19,832 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 4
+2023-04-18 19:24:19,832 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:19,833 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-18 19:24:19,834 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:19,834 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-04-18 19:24:19,835 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 5
+2023-04-18 19:24:19,835 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:19,836 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-18 19:24:19,836 DEBUG   SenderThread:195183 [sender.py:send():375] send: summary
+2023-04-18 19:24:19,840 INFO    SenderThread:195183 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-18 19:24:19,840 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:19,841 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-04-18 19:24:19,841 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 6
+2023-04-18 19:24:19,842 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:19,842 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-18 19:24:19,843 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:19,844 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-04-18 19:24:19,844 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 7
+2023-04-18 19:24:19,844 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: status_report
+2023-04-18 19:24:19,845 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:19,845 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-18 19:24:19,846 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:19,847 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-04-18 19:24:20,583 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:24:20,584 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/output.log
+2023-04-18 19:24:20,736 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-18 19:24:21,741 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 8
+2023-04-18 19:24:21,742 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: poll_exit
+2023-04-18 19:24:21,742 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:21,743 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-18 19:24:21,744 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:21,744 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-04-18 19:24:21,833 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 9
+2023-04-18 19:24:21,834 DEBUG   SenderThread:195183 [sender.py:send():375] send: artifact
+2023-04-18 19:24:21,834 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:21,837 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-18 19:24:22,591 INFO    Thread-12 :195183 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/output.log
+2023-04-18 19:24:22,979 INFO    SenderThread:195183 [sender.py:send_artifact():1474] sent artifact job-https___github.com_ajam74001_AutonomousDriving-HWs.git_hw1_pred_train.py - {'id': 'QXJ0aWZhY3Q6NDI3NDQ0MjQw', 'digest': 'a0f61932bede4898cc29b73cd441092f', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_ajam74001_AutonomousDriving-HWs.git_hw1_pred_train.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_ajam74001_AutonomousDriving-HWs.git_hw1_pred_train.py', 'alias': 'v2'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYyOTk0Mjg3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDI3NDgzODA0', 'versionIndex': 3}}, 'version': 'v2'}
+2023-04-18 19:24:22,979 DEBUG   SenderThread:195183 [sender.py:send_request():402] send_request: defer
+2023-04-18 19:24:22,980 INFO    SenderThread:195183 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-04-18 19:24:22,981 INFO    SenderThread:195183 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-18 19:24:23,589 WARNING StreamThr :195183 [internal.py:is_dead():415] Internal process exiting, parent pid 195168 disappeared
+2023-04-18 19:24:23,590 ERROR   StreamThr :195183 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-04-18 19:24:23,595 INFO    SenderThread:195183 [dir_watcher.py:finish():395] scan: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files
+2023-04-18 19:24:23,596 INFO    SenderThread:195183 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-metadata.json wandb-metadata.json
+2023-04-18 19:24:23,596 INFO    SenderThread:195183 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/config.yaml config.yaml
+2023-04-18 19:24:23,598 INFO    SenderThread:195183 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/conda-environment.yaml conda-environment.yaml
+2023-04-18 19:24:23,602 INFO    SenderThread:195183 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/output.log output.log
+2023-04-18 19:24:23,606 INFO    SenderThread:195183 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json wandb-summary.json
+2023-04-18 19:24:23,609 INFO    SenderThread:195183 [dir_watcher.py:finish():409] scan save: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/requirements.txt requirements.txt
+2023-04-18 19:24:23,613 INFO    SenderThread:195183 [sender.py:transition_state():626] send defer: 10
+2023-04-18 19:24:23,613 INFO    SenderThread:195183 [sender.py:finish():1550] shutting down sender
+2023-04-18 19:24:23,613 DEBUG   HandlerThread:195183 [handler.py:handle_request():144] handle_request: defer
+2023-04-18 19:24:23,614 INFO    SenderThread:195183 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-18 19:24:23,614 INFO    HandlerThread:195183 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-18 19:24:23,615 INFO    SenderThread:195183 [file_pusher.py:join():173] waiting for file pusher
+2023-04-18 19:24:23,621 INFO    HandlerThread:195183 [handler.py:finish():845] shutting down handler
+2023-04-18 19:24:23,622 INFO    WriterThread:195183 [datastore.py:close():298] close: /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/run-a3q1kjh5.wandb
+2023-04-18 19:24:24,081 INFO    wandb-upload_0:195183 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/config.yaml
+2023-04-18 19:24:24,285 INFO    wandb-upload_2:195183 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/wandb-summary.json
+2023-04-18 19:24:24,290 INFO    wandb-upload_3:195183 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/output.log
+2023-04-18 19:24:24,293 INFO    wandb-upload_4:195183 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/requirements.txt
+2023-04-18 19:24:24,311 INFO    wandb-upload_1:195183 [upload_job.py:push():137] Uploaded file /scratch/users/ajamshidi18/hpc_run/AutoDriving/hw1/wandb/run-20230418_192054-a3q1kjh5/files/conda-environment.yaml

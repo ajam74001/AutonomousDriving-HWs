@@ -1,0 +1,24 @@
+
+Epoch:  0 Train loss is:  2.1421399937757264 VAl loss is:  2.630437403180832
+Epoch:  1 Train loss is:  2.1311175785519594 VAl loss is:  2.6893155342712687
+Epoch:  2 Train loss is:  2.1293758167321526 VAl loss is:  2.6857185467183933
+Epoch:  3 Train loss is:  2.129057493323859 VAl loss is:  2.663521714775214
+Epoch:  4 Train loss is:  2.1275796827579456 VAl loss is:  2.6281271331143885
+Epoch:  5 Train loss is:  2.1273979436928703 VAl loss is:  2.6603797177349806
+Epoch:  6 Train loss is:  2.127872408912719 VAl loss is:  2.636144906013732
+Epoch:  7 Train loss is:  2.1276614072153017 VAl loss is:  2.691282946857165
+Epoch:  8 Train loss is:  2.126493339502892 VAl loss is:  2.705558200766993
+Epoch:  9 Train loss is:  2.1264958184508163 VAl loss is:  2.6374629398341782
+Epoch:  10 Train loss is:  2.1270856381730963 VAl loss is:  2.6739845859757048
+Epoch:  11 Train loss is:  2.125825617693958 VAl loss is:  2.6438899915123013
+Epoch:  12 Train loss is:  2.1254738731838327 VAl loss is:  2.695921093285467
+Epoch:  13 Train loss is:  2.1269537598546404 VAl loss is:  2.6556724907579876
+Epoch:  14 Train loss is:  2.125856516112489 VAl loss is:  2.709512979152087
+Epoch:  15 Train loss is:  2.1259186191046733 VAl loss is:  2.6276666793915693
+Epoch:  16 Train loss is:  2.125688725334344 VAl loss is:  2.637837957316556
+Epoch:  17 Train loss is:  2.1254538553732147 VAl loss is:  2.661103191738107
+Epoch:  18 Train loss is:  2.125905104694382 VAl loss is:  2.6339271471621584
+Epoch:  19 Train loss is:  2.125429607789341 VAl loss is:  2.623249405517639
+Epoch:  20 Train loss is:  2.125589443044876 VAl loss is:  2.6520997556403545
+Epoch:  21 Train loss is:  2.1250964955068445 VAl loss is:  2.6553076260180735
+Epoch:  22 Train loss is:  2.125832657606439 VAl loss is:  2.6910201583412996

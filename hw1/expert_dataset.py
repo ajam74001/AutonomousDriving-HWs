@@ -21,7 +21,7 @@ class ExpertDataset(Dataset):
         with open(os.path.join(self.measurements_dir, self.measurements[index]), 'r') as f:
             m = json.load(f)
         # rgb = io.imread(os.path.join(self.image_dir,self.images[index]))
-        rgb = image = Image.open(os.path.join(self.image_dir,self.images[index]))
+        image = Image.open(os.path.join(self.image_dir,self.images[index]))
         rgb = image.convert("RGB")
         # print(rgb.shape)
         if self.transform:

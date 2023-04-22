@@ -1,0 +1,1 @@
+{"Train/lane_dist_loss": 0.1413244834402576, "Train/route_angle_loss": 0.07341158170837592, "Train/tl_dist_loss": 23.594753904268146, "Train/tl_state_loss": 0.6205838918685913, "Train/total_loss": 24.430073861285372, "global_step": 24, "_timestamp": 1681835053.397461, "_runtime": 199.0244379043579, "_step": 24, "_wandb": {"runtime": 204}}

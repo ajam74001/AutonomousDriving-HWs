@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "pred_train.py", line 117, in <module>
+    main()
+  File "pred_train.py", line 88, in main
+    model = AffordancePredictor().to(device)
+TypeError: __init__() missing 1 required positional argument: 'commands'

@@ -7,6 +7,7 @@ class AffordancePredictor(nn.Module):
     """Afforance prediction network that takes images as input"""
     def __init__(self):
         super(AffordancePredictor, self).__init__()
+        # self.commands = commands
         self.resnet18 = models.resnet18(pretrained=True) ## get the last feature vector not the logits
         num_fltrs = self.resnet18.fc.in_features
         self.resnet18 = nn.Sequential(*list(self.resnet18.children())[:-1])

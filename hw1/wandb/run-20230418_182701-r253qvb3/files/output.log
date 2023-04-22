@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "cilrs_train.py", line 135, in <module>
+    main()
+  File "cilrs_train.py", line 127, in main
+    train_losses.append(train(model, train_loader))
+  File "cilrs_train.py", line 72, in train
+    loss.backward() #calculate derivatives
+  File "/kuacc/users/ajamshidi18/.conda/envs/driving2/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/kuacc/users/ajamshidi18/.conda/envs/driving2/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: Found dtype Double but expected Float

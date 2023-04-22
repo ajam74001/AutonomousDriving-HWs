@@ -6,9 +6,9 @@ from models.affordance_predictor import AffordancePredictor
 import torch.optim as optim
 import torch.nn as nn
 from torchvision import transforms
-
+import wandb
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-
+global_step = 0
 def validate(model, dataloader):
     """Validate model performance on the validation dataset"""
     # Your code here
@@ -27,14 +27,22 @@ def validate(model, dataloader):
             loss4 = crit2(preds["tl_state"],measurements["tl_state"].float().to(device))
             loss = loss1 + loss2 + loss3 + loss4    
             running_loss += loss.item()
-    return loss
+            wandb.log({'Val/lane_dist_loss': loss1.mean().item(),
+                   'Val/route_angle_loss': loss2.mean().item(),
+                   'Val/tl_dist_loss': loss3.mean().item(),
+                   'Val/tl_state_loss': loss4.mean().item(),
+                   'Val/totall_loss': loss.mean().item(),
+                   "step" : global_step
+
+                 })
+    return running_loss/len(dataloader)
 
 
 
 def train(model, dataloader):
     """Train model on the training dataset for one epoch"""
     # Your code here
-
+    global global_step
     optimizer = optim.Adam(model.parameters(), lr =0.001)
     crit1 = nn.L1Loss()
     crit2 = nn.BCELoss()
@@ -52,8 +60,15 @@ def train(model, dataloader):
         loss.backward() #calculate derivatives 
         running_loss += loss.item()
         optimizer.step()
-
-    return loss
+        wandb.log({'Train/lane_dist_loss': loss1.mean().item(),
+                   'Train/route_angle_loss': loss2.mean().item(),
+                   'Train/tl_dist_loss': loss3.mean().item(),
+                   'Train/tl_state_loss': loss4.mean().item(),
+                   'Train/total_loss': loss.mean().item(),
+                   "step" : global_step    
+                 })
+        global_step += 1
+    return running_loss/len(dataloader)
 
 def plot_losses(train_loss, val_loss):
     """Visualize your plots and save them for your report."""
@@ -64,10 +79,11 @@ def plot_losses(train_loss, val_loss):
     plt.ylabel('Loss')
     plt.title('Losses-affordances')
     plt.legend(['Train loss', 'Test loss'])
-    plt.savefig('Losses-affordances.png')
+    plt.savefig('Losses-affordances-20epochs.png')
 
 
 def main():
+    wandb.init(project='cvad-hw1-Affordances', name='my model-Affordances prediction')
     # Change these paths to the correct paths in your downloaded expert dataset
     train_root = "/userfiles/ssafadoust20/expert_data/train" # inside there is a measurement and rgb
     val_root = "/userfiles/ssafadoust20/expert_data/val"
@@ -82,10 +98,10 @@ def main():
     val_dataset = ExpertDataset(val_root, T)
 
     # You can change these hyper parameters freely, and you can add more
-    num_epochs = 30
-    batch_size = 64
-    save_path = "pred_model.ckpt"
-
+    num_epochs = 20
+    batch_size = 256
+    save_path = "pred_model-20epochs.ckpt"
+    # print(train_dataset.shape)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True,
                               drop_last=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
@@ -95,6 +111,8 @@ def main():
     for i in range(num_epochs):
         train_losses.append(train(model, train_loader))
         val_losses.append(validate(model, val_loader))
+        print('Epoch: ', i, 'Train loss is: ', train(model, train_loader), 'VAl loss is: ', validate(model, val_loader) )
+
     torch.save(model, save_path)
     plot_losses(train_losses, val_losses)
 

@@ -1,0 +1,245 @@
+{
+    "os": "Linux-3.10.0-693.11.6.el7.x86_64-x86_64-with-centos-7.4.1708-Core",
+    "python": "3.7.13",
+    "heartbeatAt": "2023-04-18T16:20:55.253546",
+    "startedAt": "2023-04-18T16:20:54.261387",
+    "docker": null,
+    "cuda": "11.0.228",
+    "args": [],
+    "state": "running",
+    "program": "pred_train.py",
+    "codePath": "hw1/pred_train.py",
+    "git": {
+        "remote": "https://github.com/ajam74001/AutonomousDriving-HWs.git",
+        "commit": "d856d3f3c2d14be8d1dde3dc4d734efe319a8b67"
+    },
+    "email": null,
+    "root": "/scratch/users/ajamshidi18/hpc_run/AutoDriving",
+    "host": "ai02.kuacc.ku.edu.tr",
+    "username": "ajamshidi18",
+    "executable": "/kuacc/users/ajamshidi18/.conda/envs/driving2/bin/python",
+    "cpu_count": 40,
+    "cpu_count_logical": 40,
+    "cpu_freq": {
+        "current": 1.295175,
+        "min": 1000.0,
+        "max": 2501.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.501,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 2.501,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 2.501,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 2.501,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 2.3,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 2.501,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 2.501,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 2.501,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 2501.0
+        }
+    ],
+    "disk": {
+        "total": 875.6815872192383,
+        "used": 87.35725402832031
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 15843721216
+        }
+    ],
+    "memory": {
+        "total": 503.37668228149414
+    }
+}
