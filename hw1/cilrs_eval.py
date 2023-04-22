@@ -42,7 +42,7 @@ class Evaluator():
         print('predictions', throttle , steer ,brake)
 
         action = {
-            "throttle": float(throttle * 50),
+            "throttle": float(throttle),
             "brake": float(brake),
             "steer": float(steer)
         }
