@@ -72,3 +72,27 @@ class Sub_Graph(nn.Module):
         # print('hidden_states', hidden_states.shape)
 
         return hidden_states 
+# with mask 
+# class Sub_Graph(nn.Module):
+#     def __init__(self, hidden_size, depth=3):
+#         super(Sub_Graph, self).__init__()
+#         self.hidden_size = hidden_size
+#         self.layers = nn.ModuleList([NormMLP(hidden_size, hidden_size//2) for i in range(depth)])
+        
+#     def forward(self, hidden_states, lengths):
+ 
+#         mask = torch.zeros(hidden_states.shape[0], hidden_states.shape[1], 1).to(x.device)
+#         for i, l in enumerate(lengths):
+#                 mask[i, :l, :] = 1
+#         mask = mask.repeat((1, 1, self.hidden_size//2)) == 0
+
+#         for i, layer in enumerate(self.layers):
+#             x = layer(hidden_states) # #polys x max(#nodes) x hidden_size//2
+#             max_x = torch.max(x.masked_fill(mask, -2e9), dim=1, keepdim=True)[0]  #polys x 1 x hidden_size//2
+#             max_x = max_x.repeat(1, x.size(1), 1) # max(#nodes) x hidden_size//2
+#             hidden_states = torch.cat([max_x, x], dim=-1) # #polys x max(#nodes) x hidden_size
+
+  
+#         hidden_states = torch.max(hidden_states.masked_fill(mask.repeat((1, 1, 2)), -2e9), dim=1)[0] # #polys x hidden_size
+
+#         return hidden_states 
